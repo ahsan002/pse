@@ -7,7 +7,7 @@ conn = sqlite3.connect('data.db')
 
 # Create a function to check the input parameter from the user -> Input Validation
 # We want to ensure we get the right parameters
-# check_user_input checks if a numerical value is entered by the use returns true if it finds a number
+# check_user_input checks if a numerical value is entered by the user and  returns true if it finds a number
 def check_user_input(input):
     try:
         # Convert it into integer
@@ -35,10 +35,9 @@ lon = input("Longitude ?")
 c = conn.cursor()
 
 # Below code checks , if the latitude and longitude are legit
-# and executes the sql and store the values returned in result variable
+# and executes the sql and store the records  returned in result variable
 # fetchall fetches all the rows and gets stored in result variable
-# it could be user inputs a made up value which does not fetch any results .This is just covering
-# the basis that if check_user_input has missed validation it gets picked within the if else statement
+# second else condition : user inputs could be a made up value which does not fetch any results .
 if (check_user_input(lat)) & (check_user_input(lon)):
     # crux of the logic, sql picks the top 5 closest location to the input location. and stores in result.
     # This can definitely be improved .Distance between two points uses a different formulae I have modified it
