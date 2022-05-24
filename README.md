@@ -1,27 +1,30 @@
 #pse
+```
 
-I used Python with sqllite to find the closest locations from Input locations. 
+simpleProgram1 uses  Python with sqllite to find the closest locations from Input locations. 
 
-Program1 takes input from the user and finds the nearby locations from the input (latitudes and longitude).
+simpleProgram1 takes input from the user and finds the nearby locations from the input (latitudes and longitude).
 
-Although a simple solution I later used the same logic to write another program program2 (which did not take much time to run once program 1 was running)   to generat  API based on the input 
+Program2 uses simpleprogram1 logic  (which did not take much time to run once simpleprogram1 was running) to generate  API based on the querystring as input 
 
-# Program1
+```
+
+# Program1 -simpleProgram1
 ## Requirements to Run it successfully 
-Program needs latest python installed and need sqllite to run it  sucessfully .It needs data.db file in the project to find the databazse and run it successfully 
-Program checks for basic invalid input entries 
-Finds and lists  5 nearby  location  (from your input loctions) of  Approved sites
+Program needs latest python installed and need sqllite to run it  successfully. It needs data.db file in the project to find the databazse and run it successfully 
+Program checks ( for some basic) invalid input entries 
+Finds and lists  5 nearby  location  (from user  input loctions) of  Approved sites
 
 
 ## Steps 
-1.First the csv is imported as databases  to sqllite to generate a db file 
+1.First the csv is imported as database  to sqllite to generate a db file 
 2.That file is used to connect using database connectivity in program
 3.SQl script calculates all the records from the input location and sorts it by distance and displays the first 5 (to get the nearby locations)
 
 
-# 2nd Program
+# 2nd Program program2
 ## Requirements to Run it successfully 
-Program needs latest python version (3.10)  installed and need sqllite and FLASK  to run with it  sucessfully .Can be run from terminal and will use default port 5100 on localhost to call the api 
+Program needs latest python version (3.10)  installed and need sqllite and FLASK  to run it  sucessfully .Can be run from terminal and will use default port 5100 on localhost to call the api 
 Uses the first program and demostantrates the possbility of converting it to api (using the same logic)
 
 I noticed on the sfgov website they already group by location . So I have taken a different approach and  calculated distance based on Latitude and Longitude .
