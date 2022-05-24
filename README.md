@@ -1,10 +1,15 @@
 #pse
+```
 
 I used Python with sqllite to find the closest locations from Input locations. 
 
 Program1 takes input from the user and finds the nearby locations from the input (latitudes and longitude).
 
-Although a simple solution I later used the same logic to write another program program2 (which did not take much time to run once program 1 was running)   to generat  API based on the input 
+Although a simple solution I later used the same logic to write another program program2 
+
+(which did not take much time to run once program 1 was running)   to generat  API based on the input 
+
+```
 
 # Program1
 ## Requirements to Run it successfully 
