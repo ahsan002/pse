@@ -1,20 +1,21 @@
 
 
 ## Summary
+
+For this excercise I have created two program files simpleprogram1 and program2
+
 **simpleProgram1** uses  **Python with sqllite** to find the closest locations from Input locations. 
 
-simpleProgram1 takes input from the user (via cmdline) and calculates the nearby locations from the input (latitudes and longitude).
+simpleProgram1 accepts  input from the user (via cmdline) and calculates the nearby locations from the input (latitudes and longitude).It then displays the result on the command line itself.
 
-**Program2** uses simpleprogram1 logic  (which did not take much time to run once simpleprogram1 was running) 
-
-to generate  API based on the querystring as input 
+**Program2** uses same logic as *simpleprogram1*  but disaplays  the JSON format result on Web . It takes querystring parameters to display results.As the result can be called via an API we can exploit it further to display the results as we like (i.e on maps or on Web Interface ) 
 
 
 
 ## Program1 -simpleProgram1
-## Requirements to Run it successfully 
-Program needs latest python installed and need sqllite to run it  successfully. It needs data.db file in the project to query  the data and run it successfully 
-Program checks ( for some basic) invalid input entries 
+## Requirements to Run simpleProgram1 successfully 
+Program needs latest python installed and need sqllite to run it  successfully. It needs data.db file in the project to query  the data  
+Program checks ( for some basic) invalid input entries (*input validation) 
 Finds and lists  5 nearby  location  (from user  input loctions) of  **Approved** sites
 
 
@@ -61,10 +62,11 @@ http://127.0.0.1:5000/api/v1/resources/food/all?Latitude=37.76&Longitude=-122.42
 # Why I chose Python . 
 
 
-Given the timeframe.I wanted to keep it simple.I chose Python as  I knew that it has lots of libraries and I will not need to re-invent a wheel. 
+Given the timeframe.I wanted to keep it simple.I chose Python as  I knew that it has lots of libraries and I will not need to re-invent a wheel creating unnecessary methods. 
 I chose sqllite with it as it will allow to keep the data separate and give me more power to manipulate data on the client , which mean less line of code.If new food location  are added or approved in database it will automatically be picked by my code.
 
 # What would I have done different if given more time ?
 
+Would have spent more time on sql to make it more accurate and would have prepared an interface  for the user to enter or choose the location.Although the program demonstrates what was asked its not complete.Some more code  need to be added for API and I am sure we can break the program one way or another. 
 Being a Security enthusiat I would  have done more checks and would have done more testing.
-Would have spent more time on sql to make it more accurate and would have prepared an interface or  the user to enter or choose the location.
+
