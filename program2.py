@@ -42,8 +42,9 @@ def page_not_found(e):
     return "<h1>404</h1><p>The resource could not be found.</p>", 404
 
 
-# this app_route tells use the get method and uses query parameters
-# refer the line request.args anything specified after? i.e as sample use the below after running the program
+# this app_route tells the program to use the get method and uses query parameters refer the statement
+# query_parameters= request.args means the program will treat anything specified after "?" as parameter  i.e as
+#  in below url change the querystring after running the program (on web browser)
 # http://127.0.0.1:5000/api/v1/resources/food?Latitude=37.76&Longitude=-122.42730642251331
 @app.route('/api/v1/resources/food', methods=['GET'])
 def api_filter():
@@ -56,16 +57,16 @@ def api_filter():
     # Create a function to check the input parameter from the user -> Input Validation
     # We want to ensure we get the right parameters
     # check_user_input checks if a numerical value is entered by the use returns true if it finds a number
-    def check_user_input(input):
+    def check_user_input(inpu):
         try:
             # Convert it into integer
-            val = int(input)
+            int(inpu)
             # print("Input is an integer number. Number = ", val)
             return True
         except ValueError:
             try:
                 # Convert it into float
-                val = float(input)
+                float(inpu)
 
                 return True
             except ValueError:
@@ -74,8 +75,8 @@ def api_filter():
     conn = sqlite3.connect('data.db')
     # conn.row_factory = dict_factory
     cur = conn.cursor()
-    '''The challenge shares a file which has some food location  status as approved. We want to ensure we are checking the 
-    location against the Approved location.
+    '''Microsoft challenge has  shared  a file,  which has some food location  status as Approved. We want 
+    to ensure we are checking the inputs distance  against the Approved location.
     lat and lon are variable  which will store user specified latitudes and longitudes value 
     c is storing the cursor object  which provides the attribute lastrowid that is used to fetch the last auto-generated ID
     '''

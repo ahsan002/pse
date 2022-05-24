@@ -75,6 +75,6 @@ I chose sqllite with it as it will allow to keep the data separate and give me m
 
 ## What would I have done different if given more time ?
 
-Would have spent more time on sql to make it more accurate and would have prepared an interface  for the user to enter or choose the location.Although the program demonstrates what was asked its not complete.Some more code  need to be added for API and I am sure we can break the program one way or another. 
+I would have spent more time on sql to make it more accurate and would have prepared an interface  for the user to enter or choose the location.Although the program demonstrates what was asked its not complete.Some more code  need to be added for API and I am sure we can break the program one way or another. 
 Being a Security enthusiat I would  have done more checks and would have done more testing.
 
