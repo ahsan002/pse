@@ -1,6 +1,6 @@
-#pse
 
 
+## Summary
 **simpleProgram1** uses  **Python with sqllite** to find the closest locations from Input locations. 
 
 simpleProgram1 takes input from the user (via cmdline) and calculates the nearby locations from the input (latitudes and longitude).
@@ -11,7 +11,7 @@ to generate  API based on the querystring as input
 
 
 
-# Program1 -simpleProgram1
+## Program1 -simpleProgram1
 ## Requirements to Run it successfully 
 Program needs latest python installed and need sqllite to run it  successfully. It needs data.db file in the project to query  the data and run it successfully 
 Program checks ( for some basic) invalid input entries 
@@ -24,7 +24,7 @@ Finds and lists  5 nearby  location  (from user  input loctions) of  **Approved*
 3.SQl script calculates closest location from the input values,  sorts it by distance and displays the first 5 (to get the nearby locations)
 
 
-# 2nd Program program2
+## 2nd Program program2
 ## Requirements to Run it successfully 
 Program needs latest python version (3.10)  installed and need sqllite and FLASK  to run it  sucessfully .Can be run from terminal and will use default port 5100 on localhost to call the api 
 Uses the first program and demostantrates the possbility of converting it to api (using the same logic)
@@ -32,7 +32,7 @@ Uses the first program and demostantrates the possbility of converting it to api
 I noticed on the sfgov website they already group by location . So I have taken a different approach and  calculated distance based on Latitude and Longitude .
 
 ## Steps 
-Uses the first 3 steps of program 1 and uses FLASK , flask comes with built in webserver. This just shows how we can see results from api call  .
+**Program2** Uses the first 3 steps of program 1 and uses FLASK , flask comes with built in webserver. This program  just shows how we can see results from api call  .
 
 Once the code is running one needs to modify the querystring to see the reults 
 
@@ -46,6 +46,17 @@ Open pycharm(or any other IDE) and import the project directory
 pull project from the repo and run program1
 ```
 
+## Checking  Program2
+## Once the program is running goto  all locations to verify API results
+```
+http://127.0.0.1:5000/api/v1/resources/food/all
+```
+
+## goto below location and modify the Latitude and Longitude value to check the results
+```
+http://127.0.0.1:5000/api/v1/resources/food/all?Latitude=37.76&Longitude=-122.42730642251331
+
+```
 
 # Why I chose Python . 
 
@@ -55,5 +66,5 @@ I chose sqllite with it as it will allow to keep the data separate and give me m
 
 # What would I have done different if given more time ?
 
-Being a Security enthusiat I would  have done more checks and would have done more testing .Although I took care of sql Injection but its not a complete program  
+Being a Security enthusiat I would  have done more checks and would have done more testing.
 Would have spent more time on sql to make it more accurate and would have prepared an interface or  the user to enter or choose the location.
