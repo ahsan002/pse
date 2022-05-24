@@ -61,19 +61,19 @@ pull project from the repo and run program2
 http://127.0.0.1:5000/api/v1/resources/food/all
 ```
 
-## goto below location and modify the Latitude and Longitude value to check the results
+## Goto below location and modify the Latitude and Longitude value to check the results
 ```
 http://127.0.0.1:5000/api/v1/resources/food/all?Latitude=37.76&Longitude=-122.42730642251331
 
 ```
 
-# Why I chose Python . 
+## Why I chose Python . 
 
 
 Given the timeframe.I wanted to keep it simple.I chose Python as  I knew that it has lots of libraries and I will not need to re-invent a wheel creating unnecessary methods. 
 I chose sqllite with it as it will allow to keep the data separate and give me more power to manipulate data on the client , which mean less line of code.If new food location  are added or approved in database it will automatically be picked by my code.
 
-# What would I have done different if given more time ?
+## What would I have done different if given more time ?
 
 Would have spent more time on sql to make it more accurate and would have prepared an interface  for the user to enter or choose the location.Although the program demonstrates what was asked its not complete.Some more code  need to be added for API and I am sure we can break the program one way or another. 
 Being a Security enthusiat I would  have done more checks and would have done more testing.
