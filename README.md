@@ -81,5 +81,5 @@ I chose sqllite with it as it will allow to keep the data separate and give me m
 ## What would I have done different if given more time ?
 
 I would have designed an interface  for the user to enter or choose the location.Although the program demonstrates what was asked its not complete.Some more code can  added for API checks and I am sure we can break the program one way or another. 
-Being a Security enthusiat I would  have done incorporated more tests (besides the input validation and sql injection checks ) and would have done more testing.
+Being a Security enthusiat I would  have incorporated more tests (besides the input validation and sql injection checks ) and would have done more testing.
 
