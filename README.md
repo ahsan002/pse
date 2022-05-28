@@ -10,6 +10,8 @@ simpleProgram1 accepts  input from the user (via cmdline) and calculates the nea
 
 **Program2**  adds flask library and  displays  the JSON results on a web browser. It takes querystring parameters to display results.As the result can be called via an API we can exploit it further to display the results as we like (i.e on maps or on Web Interface ) 
 
+**simpleProgram3** I did this as I was not too happy on how I was calculating the distances of food trucks from the input locations.I have left the other 2 programs in repo to discuss on my approach and how I ended with third program. If I have to choose one program to demo I will be choosing simpleprogram3.
+
 
 
 ## Program1 -simpleProgram1
@@ -67,6 +69,9 @@ http://127.0.0.1:5000/api/v1/resources/food/all?Latitude=37.76&Longitude=-122.42
 
 ```
 
+### Program 3 -- Simple Program3
+I found some more time  on weekend to fix the core logic on how the distance was getting calculated and this program gives a very precise output. This program uses Geopy python libraries.Logic involves creating a temporary database and appending  a new distance column to it . I then use this column to store the distance (calculated from the input location) and then sort the location based on the distances ,and then display the top 5 clostest locations.I have left the the other 2 programs to discuss my approach and how I ended up coding simpleprogram3.
+
 ## Why I chose Python . 
 
 
@@ -75,6 +80,6 @@ I chose sqllite with it as it will allow to keep the data separate and give me m
 
 ## What would I have done different if given more time ?
 
-I would have spent more time on sql to make it more precise and would have prepared an interface  for the user to enter or choose the location.Although the program demonstrates what was asked its not complete.Some more code can  added for API checks and I am sure we can break the program one way or another. 
+I would have designed an interface  for the user to enter or choose the location.Although the program demonstrates what was asked its not complete.Some more code can  added for API checks and I am sure we can break the program one way or another. 
 Being a Security enthusiat I would  have done incorporated more tests (besides the input validation and sql injection checks ) and would have done more testing.
 
