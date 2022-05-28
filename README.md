@@ -2,7 +2,7 @@
 
 ## Summary
 
-For this excercise I have created two program files simpleprogram1 and program2
+For this excercise I have created 3  program files simpleprogram1, program2 and simpleProgram3
 
 **simpleProgram1** uses  **Python with sqllite** to find the closest locations from Input locations. 
 
